@@ -1,0 +1,68 @@
+input:focus,select:focus{
+	outline: none;
+}
+body{
+	font: bold 12px tahoma;
+}
+.form1{
+	width: 610px;
+	height: 450px;
+	margin: 60px auto;
+	background: url(images/formarka.jpg) no-repeat;
+	padding: 100px 0 0 40px;
+}
+td{
+	height: 30px;
+}
+#dugme{
+	width: 120px;
+	height: 30px;
+	border: 2px solid #9d3a56;
+	background: #933;
+	border-radius: 3px;
+	color: #fff;
+	font-weight: bold;
+}
+#dugme:hover{
+	border-color: #9b4562;
+	background: #72273c;
+}
+#ad,#soyad,#kadi,#parola,#mail,#girilenkod{
+	width: 175px;
+	height: 25px;
+	border: 1px solid #bbb;
+	color: #ababab;
+	background: #fff;
+	border-radius: 3px;
+	padding: 0 0 0 2px;
+}
+#gun,#ay{
+	width: 50px;
+	height: 25px;
+	color: #000;
+	border: 1px solid #999;
+	background: #fff;
+	border-radius: 3px;
+}
+#yil,#dyeri{
+	width: 100px;
+	height: 25px;
+	color: #000;
+	border: 1px solid #999;
+	background: #fff;
+	border-radius: 3px;
+}
+#uretilenkod{
+	width: 135px;
+	height: 56px;
+	background: url(images/guvenlik.jpg) no-repeat;
+	font: bold 30px tahoma;
+	color: #fff;
+	text-align: center;
+	border: none;
+	text-shadow: 0 1px 1px #000;
+}
+span{
+	color: #b00;
+	font: 11px tahoma;
+}

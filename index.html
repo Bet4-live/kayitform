@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>JS 39</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="script.js">
+
+	</script>
+</head>
+
+<body onload="koduret()">
+	<div class="form1">
+		<form action="" method="get">
+			<table width="630" border="0">
+				<tr>
+					<td width="180">Adı:</td>
+					<td width="270">
+						<input id="ad" value="Adınızı Yazınız" onfocus="odaklan(this.id)" onblur="cikis(this.id,this.value)" name="" type="text" />
+						</td>
+						<td width="180">
+							<span id="aduyari"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>Soyadı:</td>
+						<td>
+							<input id="soyad" value="Soyadınızı Yazınız" onfocus="odaklan(this.id)" onblur="cikis(this.id,this.value)" name="" type="text" />
+						</td>
+						<td>
+							<span id="soyaduyari"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>Kullanıcı Adı:</td>
+						<td>
+							<input id="kadi" value="Kullanıcı Adı Yazınız" onfocus="odaklan(this.id)" onblur="cikis(this.id,this.value)" name="" type="text" />
+						</td>
+						<td>
+							<span id="kadiuyari"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>Parola:</td>
+						<td>
+							<input id="parola" name="" type="password" />
+						</td>
+						<td>
+							<span id="parolauyari"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>E-Mail:</td>
+						<td>
+							<input id="mail" value="E-Mail Giriniz" onfocus="odaklan(this.id)" onblur="cikis(this.id,this.value)" name="" type="text" />
+						</td>
+						<td>
+							<span id="mailuyari"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>Doğum Tarihi:</td>
+						<td>
+							<select name="" id="gun">
+								<option value="">Gün</option>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="06">08</option>
+								<option value="07">09</option>
+								<option value="06">10</option>
+								<option value="07">11</option>
+								<option value="04">12</option>
+								<option value="05">13</option>	
+								<option value="06">14</option>
+								<option value="07">15</option>
+								<option value="06">16</option>
+								<option value="07">17</option>
+								<option value="04">18</option>
+								<option value="05">19</option>	
+								<option value="06">20</option>
+								<option value="07">21</option>
+								<option value="06">22</option>
+								<option value="07">23</option>
+								<option value="04">24</option>
+								<option value="05">25</option>	
+								<option value="06">26</option>
+								<option value="07">27</option>
+								<option value="06">28</option>
+								<option value="07">29</option>
+								<option value="04">30</option>
+								<option value="05">31</option>
+								
+							</select> 
+
+							<select name="" id="ay">
+								<option value="">Ay</option>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>	
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="04">08</option>
+								<option value="05">09</option>	
+								<option value="06">10</option>
+								<option value="07">11</option>
+								<option value="04">12</option>
+							</select> 
+
+							<select name="" id="yil">
+								<option value="">Yıl</option>
+								<option value="1995">1975</option>
+								<option value="1996">1976</option>
+								<option value="1997">1977</option>
+								<option value="1998">1978</option>
+								<option value="1995">1979</option>
+								<option value="1996">1980</option>
+								<option value="1997">1981</option>
+								<option value="1998">1982</option>
+								<option value="1995">1983</option>
+								<option value="1996">1984</option>
+								<option value="1997">1985</option>
+								<option value="1998">1986</option>
+								<option value="1995">1987</option>
+								<option value="1996">1988</option>
+								<option value="1997">1989</option>
+								<option value="1998">1990</option>
+								<option value="1995">1991</option>
+								<option value="1996">1992</option>
+								<option value="1997">1993</option>
+								<option value="1998">1994</option>
+								<option value="1995">1995</option>
+								<option value="1996">1996</option>
+								<option value="1997">1997</option>
+								<option value="1998">1998</option>
+								<option value="1999">1999</option>
+								<option value="2000">2000</option>
+								<option value="2001">2001</option>
+								<option value="2000">2002</option>
+								<option value="2001">2003</option>
+								<option value="2000">2004</option>
+								<option value="2001">2005</option>
+								<option value="2000">2006</option>
+								<option value="2001">2007</option>
+								<option value="2001">2008</option>
+								<option value="2000">2009</option>
+								<option value="2001">2010</option>
+								<option value="2000">2011</option>
+								<option value="2001">2012</option>
+								<option value="2000">2013</option>
+								<option value="2001">2014</option>
+								<option value="2001">2015</option>
+								<option value="2000">2016</option>
+								<option value="2001">2017</option>
+								<option value="2000">2018</option>
+								<option value="2001">2019</option>
+								<option value="2000">2020</option>
+								<option value="2001">2021</option>
+							</select> 
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Doğum Yeri:</td>
+						<td>
+								<select id="dyeri" name="">
+								<option value="">Doğum Yeri</option>
+								
+								<option value="Antalya">Antalya</option>
+								<option value="Ankara">Ankara</option>
+                <option value="Adana">Adana</option>
+                <option value="Adıyaman">Adıyaman</option>
+                <option value="Afyon">Afyon</option>
+                <option value="Ağrı">Ağrı</option>
+                <option value="Amasya">Amasya</option>
+                <option value="Artvin">Artvin</option>
+                <option value="Aydın">Aydın</option>
+                <option value="Bartın">Bartın</option>
+                <option value="Batman">Batman</option>
+                <option value="Bayburt">Bayburt</option>
+                <option value="Bilecik">Bilecik</option>
+                <option value="Bingöl">Bingöl</option>
+                <option value="Bitlis">Bitlis</option>
+                <option value="Bolu">Bolu</option>
+                <option value="Burdur">Burdur</option>
+                <option value="Balıkesir">Balıkesir</option>
+								<option value="Bursa">Bursa</option>
+                <option value="Çanakkale">Çanakkale</option>
+                <option value="Çankırı">Çankırı</option>
+                <option value="Çorum">Çorum</option>
+                <option value="Denizli">Denizli</option>
+                <option value="Düzce">Düzce</option>
+								<option value="Diyarbakır">Diyarbakır</option>
+                <option value="Edirne">Edirne</option>
+                <option value="Elâzığ">Elâzığ</option>
+                <option value="Erzincan">Erzincan</option>
+                <option value="Erzurum">Erzurum</option>
+                <option value="Eskişehir">Eskişehir</option>
+                <option value="Gaziantep">Gaziantep</option>
+                <option value="Giresun">Giresun</option>
+                <option value="Gümüşhane">Gümüşhane</option>
+                <option value="Hakkâri">Hakkâri</option>
+                <option value="Hatay">Hatay</option>
+                <option value="Iğdır">Iğdır</option>
+                <option value="Isparta">Isparta</option>
+								<option value="İstanbul">İstanbul</option>
+								<option value="İzmir">İzmir</option>
+                <option value="Kahramanmaraş">Kahramanmaraş</option>
+                <option value="Karabük">Karabük</option>
+                <option value="Karaman">Karaman</option>
+                <option value="Kars">Kars</option>
+                <option value="Kastamonu">Kastamonu</option>
+                <option value="Kayseri">Kayseri</option>
+                <option value="Kırıkkale">Kırıkkale</option>
+                <option value="Kırklareli">Kırklareli</option>
+                <option value="Kırşehir">Kırşehir</option>
+                <option value="Kilis">Kilis</option>
+                <option value="Kocaeli">Kocaeli</option>
+                <option value="Konya">Konya</option>
+                <option value="Kütahya">Kütahya</option>
+								<option value="Manisa">Manisa</option>
+                <option value="Mardin">Mardin</option>
+                <option value="Muğla">Muğla</option>
+                <option value="Muş">Muş</option>
+                <option value="Mersin">Mersin</option>
+								<option value="Malatya">Malatya</option>
+                <option value="Nevşehir">Nevşehir</option>
+                <option value="Niğde">Niğde</option>
+                <option value="Ordu">Ordu</option>
+                <option value="Osmaniye">Osmaniye</option>
+                <option value="Rize">Rize</option>
+                <option value="Sakarya">Sakarya</option>
+                <option value="Samsun">Samsun</option>
+                <option value="Siirt">Siirt</option>
+                <option value="Sinop">Sinop</option>
+                <option value="Sivas">Sivas</option>
+                <option value="Şırnak">Şırnak</option>
+                <option value="Şanlıurfa">Şanlıurfa</option>
+                <option value="Tekirdağ">Tekirdağ</option>
+                <option value="Tokat">Tokat</option>
+                <option value="Trabzon">Trabzon</option>
+                <option value="Tunceli">Tunceli</option>
+                <option value="Uşak">Uşak</option>
+                <option value="Van">Van</option>
+                <option value="Yalova">Yalova</option>
+								<option value="Yozgat">Yozgat</option>
+                <option value="Zonguldak">Zonguldak</option>
+								
+
+							</select>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Cinsiyet:</td>
+						<td>
+							<input id="cins1" name="cinsiyet" type="radio" value="" checked="checked" />Erkek
+							<input id="cins2" name="cinsiyet" type="radio" value="" />Kadın
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Hobiler:</td>
+						<td>
+							<input id="hobi1" name="" type="checkbox" value="" />Spor
+							<input id="hobi2" name="" type="checkbox" value="" />Sinema
+							<input id="hobi3" name="" type="checkbox" value="" />Müzik
+							<input id="hobi4" name="" type="checkbox" value="" />Kitap
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<input id="uretilenkod" name="" type="text" />
+						</td>
+						<td>
+							<input id="girilenkod" value="Güvenlik Kodunu Giriniz" onfocus="odaklan(this.id)" onblur="cikis(this.id,this.value)" name="" type="text" />
+						</td>
+						<td>
+							<span id="guvenlikuyari"></span>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input id="dugme" name="" type="button" value="Gönder" onclick="islem()" /></td>
+						<td></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+  </body>
+</html>
